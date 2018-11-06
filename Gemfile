@@ -19,7 +19,7 @@ gem 'whenever', '~> 0.9.4', require: false
 gem 'hashdiff', require: false
 
 if ENV['GDS_API_ADAPTERS_DEV']
-  gem 'gds-api-adapters', path: '../gds-api-adapters'
+  gem 'gds-api-adapters', '41.0.0'
 else
   gem 'gds-api-adapters', "~> 41.0"
 end
@@ -28,7 +28,7 @@ gem 'govuk-content-schema-test-helpers', '~> 1.4'
 gem 'uuidtools', '2.1.5'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'database_cleaner', '~> 1.5.3'
   gem 'factory_girl', '~> 4.4'
   gem 'webmock', '2.1.0', require: false
@@ -39,7 +39,7 @@ group :development, :test do
   gem 'ci_reporter_rspec', '~> 1.0.0'
 
   gem "pry-byebug"
-  gem "pact"
+  gem "pact", ">= 1.10.0"
 
   gem "govuk-lint"
 end
