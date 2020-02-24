@@ -28,7 +28,7 @@ gem 'govuk-content-schema-test-helpers', '~> 1.4'
 gem 'uuidtools', '2.1.5'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'database_cleaner', '~> 1.5.3'
   gem 'factory_girl', '~> 4.4'
   gem 'webmock', '2.1.0', require: false
@@ -41,5 +41,5 @@ group :development, :test do
   gem "pry-byebug"
   gem "pact"
 
-  gem "govuk-lint"
+  gem "govuk-lint", ">= 2.0.0"
 end
