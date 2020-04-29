@@ -39,7 +39,7 @@ group :development, :test do
   gem 'ci_reporter_rspec', '~> 1.0.0'
 
   gem "pry-byebug"
-  gem "pact"
+  gem "pact", ">= 1.10.0"
 
   gem "govuk-lint"
 end
