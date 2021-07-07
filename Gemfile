@@ -24,7 +24,7 @@ else
   gem 'gds-api-adapters', "~> 41.0"
 end
 
-gem 'govuk-content-schema-test-helpers', '~> 1.4'
+gem 'govuk-content-schema-test-helpers', '~> 1.6', '>= 1.6.0'
 gem 'uuidtools', '2.1.5'
 
 group :development, :test do
