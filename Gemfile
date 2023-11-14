@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.1'
+gem 'rails', '5.1.2'
 
 gem 'mongoid', '6.1.0'
-gem 'mongoid_rails_migrations', '1.0.1'
+gem 'mongoid_rails_migrations', '1.1.0'
 
 gem 'logstasher', '0.5.0'
 gem 'airbrake', '~> 5.4'
@@ -28,7 +28,7 @@ gem 'govuk-content-schema-test-helpers', '~> 1.4'
 gem 'uuidtools', '2.1.5'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.6', '>= 3.6.0'
   gem 'database_cleaner', '~> 1.5.3'
   gem 'factory_girl', '~> 4.4'
   gem 'webmock', '2.1.0', require: false
