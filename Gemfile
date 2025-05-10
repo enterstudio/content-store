@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.1'
+gem 'rails', '7.0.0'
 
 gem 'mongoid', '6.1.0'
 gem 'mongoid_rails_migrations', '1.0.1'
@@ -9,7 +9,7 @@ gem 'logstasher', '0.5.0'
 gem 'airbrake', '~> 5.4'
 gem 'airbrake-ruby', '1.5'
 
-gem 'unicorn', '4.8.2'
+gem 'unicorn', '5.1.0'
 
 gem 'plek', '~> 1.9'
 
@@ -19,9 +19,9 @@ gem 'whenever', '~> 0.9.4', require: false
 gem 'hashdiff', require: false
 
 if ENV['GDS_API_ADAPTERS_DEV']
-  gem 'gds-api-adapters', path: '../gds-api-adapters'
+  gem 'gds-api-adapters', '>= 67.0.1', path: '../gds-api-adapters'
 else
-  gem 'gds-api-adapters', "~> 41.0"
+  gem 'gds-api-adapters', '~> 67.0', '>= 67.0.1'
 end
 
 gem 'govuk-content-schema-test-helpers', '~> 1.4'
@@ -39,7 +39,7 @@ group :development, :test do
   gem 'ci_reporter_rspec', '~> 1.0.0'
 
   gem "pry-byebug"
-  gem "pact"
+  gem "pact", ">= 1.44.0"
 
   gem "govuk-lint"
 end
